@@ -6,7 +6,6 @@ function Calculator() {
   const [result, setResult] = useState('');
 
   const handleClick = (value) => {
-
     // Race condition: no more than one decimal point in the input.
     if (value == '.' && input.includes('.')) { return; }
 
